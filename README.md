@@ -5,8 +5,8 @@
 
 ## Links to the Website:
 
-1. [Link to Homepage](https://pyaks.azurewebsites.net/)
-2. [Link to Web Api](https://webapia.azurewebsites.net)
+1. [Link to Homepage](https://mvcap.azurewebsites.net/)
+2. [Link to Web Api](https://webapimvc.azurewebsites.net/)
 
 ## Tools Used
 + Asp .Net Framework 4.7
