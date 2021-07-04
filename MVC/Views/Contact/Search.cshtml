@@ -1,0 +1,107 @@
+﻿@model IPagedList<MVC.Models.mvcContactModel>
+@{
+    ViewBag.Title = "Search";
+}
+
+@using PagedList.Mvc;
+@using PagedList;
+<br />
+
+
+
+
+
+<h2><strong> Search Contract Details: </strong></h2>
+<h2 />
+
+<p>
+    @using (Html.BeginForm("Search", "Contact", FormMethod.Get))
+    {
+        <input type="text" id="in" name="emp" placeholder="Enter First Name ..." />
+        <input id="ins" type="submit" value="Search" name="submit" />
+    }
+</p>
+
+<table  class="table table-striped">
+    <thead class="table-headings" id=" uu">
+        <tr>
+            <th >
+                @Html.DisplayNameFor(model => model.First().firstName)
+               
+                
+            </th>
+            <th>
+                <a asp-action="Search" id= "n" asp-route-sorts="@ViewData["NameOrder"]">Last Name  </a>
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().Phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().Email)
+            </th>
+            <th>Action</th>
+        </tr>
+
+    </thead>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td id="ttd">
+                @Html.DisplayFor(modelItem => item.firstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.lastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+
+@*                <a href="@Url.Action("Details", "Contact", new { id = item.Id})" class="btn btn-default"><i class="fas fa-info"></i>  Details</a>
+*@
+                <a href="@Url.Action("AddOrEdit", "Contact", new { id = item.Id})" class="btn btn-default"><i class="fa fa-edit"></i>  Modify</a>
+
+                <a onclick="Delete(@item.Id)" class="btn btn-default"><i class="fa fa-trash"></i>  Delete</a>
+
+            </td>
+
+        </tr>
+    }
+
+</table>
+
+
+
+@Html.PagedListPager(Model,i=>Url.Action("Search", "Contact", new { i, search=Request.QueryString["emp"]}))
+
+
+
+
+@section scripts{
+
+    <script>
+
+        $(function (){
+            var successMessage = '@TempData["SuccessMessage"]'
+
+            if (successMessage != '')
+                alertify.success(successMessage);
+
+        });
+
+        function Delete(id){
+            alertify.confirm('Contact List', 'Do you want to delete ?', function () {
+                window.location.href  = '@Url.Action("Delete","Contact")/'+id;
+            },null );
+
+        }
+
+
+    </script>
+
+}

@@ -1,0 +1,233 @@
+﻿
+    
+
+a .navbar-brand{
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+/* Provide sufficient contrast against white background */
+a {
+    
+}
+
+#m, #n{
+    color:white;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: white;
+    color: #282727;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+#in {
+    display:inline;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    color: black;
+    background-color: white;
+    display:initial;
+}
+
+#ins {
+    display:inline;
+    background-color: orange;
+    border: none;
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 340px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+    font-size: 18px;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+input, textarea {
+    display: block;
+    height: 100%;
+    padding: 5px 10px;
+    background: none;
+    background-image: none;
+    border: 1px solid #a0b3b0;
+    color: black;
+    border-radius: 0;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+.button {
+    border: 1px solid #fff;
+    outline: none;
+    border-radius: 0;
+    padding: 10px 10px;
+    font-weight: 400;
+    background: #2a3843;
+    color: #fff;
+}
+
+    .button:hover, .button:focus {
+        color: #fff !important;
+    }
+
+.form-body {
+    background: #cfcfcf;
+    padding: 20px 40px;
+    max-width: 600px;
+    margin: 30px auto;
+    box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+body {
+    background: #f2f0f0;
+    font-size: 1em;
+}
+
+
+label {
+    color: #fff;
+    font-size: 22px;
+}
+
+.form-body input, textarea {
+    font-size: 20px;
+}
+
+    textarea:focus, input:focus {
+        outline: none;
+    }
+    
+
+.table-heading {
+    background-color: #2a3843;
+    color: white;
+    font: bold;
+}
+
+.add-new {
+    background-color: #ad175f;
+}
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+footer {
+    font-size:medium;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+
+
+
+table {
+    border-collapse: separate;
+    
+    width:100%;
+}
+
+    table th {
+        text-align: left;
+        background-color: black;
+        color: white;
+        font-family: sans-serif;
+        padding: 4px 50px 4px 12px;
+    }
+
+    table td {
+        border: 1px solid whitesmoke;
+        background-color: white;
+        padding: 15px 30px;
+        font-family: monospace;
+    }
+
+    table tr:nth-child(odd) td {
+        background-color: lightgray;
+    }
+
+
