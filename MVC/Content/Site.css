@@ -117,7 +117,7 @@ input, textarea {
     }
 
 .form-body {
-    background: #cfcfcf;
+    background: #f2f0f0;
     padding: 20px 40px;
     max-width: 600px;
     margin: 30px auto;
@@ -131,7 +131,7 @@ body {
 
 
 label {
-    color: #fff;
+    color: black;
     font-size: 22px;
 }
 
