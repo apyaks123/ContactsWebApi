@@ -53,7 +53,7 @@ namespace MVC.Controllers
 
            
 
-            return View(zzz.ToPagedList(i ?? 1, 5));
+            return View(zzz.ToPagedList(i ?? 1, 8));
         }
 
         
